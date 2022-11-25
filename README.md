@@ -1,6 +1,19 @@
 # Pygame snake game
 This is my version of a snake game using the pygame module, which consists of five levels, and different kinds of bonus fruits. Graphics are drawn by importing pictures and placing them on the respective rectangles using pygame.
 
+## Installing
+Download the Python 3 installer package from the official website and install it, if not installed previously.
+
+Run the following in the terminal to install the Pygame library
+```
+pip3 install pygame
+```
+## Running
+
+Download the source code and files from the repository and run the file just as any other Python script (.py) file.
+```
+python3 snake_game\ main.py
+```
 ## Snake
 For initializing the snake we created a class snake which stores following methods: 
 
