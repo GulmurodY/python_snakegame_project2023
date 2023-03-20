@@ -48,7 +48,7 @@ This class stores different level's maps.
 1.*Constructor* - stores different level's borders(i.e lists with coordinates of walls)
 
 2.*draw_grass* - responsible for drawing our maps on the screen
-## Main(Logi)
+## Main(Logiс)
 In this class we simply define what our game should do in every iteration of the game loop.
 
 1.*Constructor* - here we initialize our game elements(i.e. Snake, Frut, Grass)
