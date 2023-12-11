@@ -25,7 +25,7 @@ class MAIN:
         self.level3_pass = False
         self.level4_pass = False
         self.level5_pass = False
-        pygame.mixer.Sound('Sound/round_one.mp3').play()
+        # pygame.mixer.Sound('Sound/round_one.mp3').play()
 
         self.game_font = pygame.font.Font('Fonts/Snowy Winter.otf', 25)
         self.game_over_font = pygame.font.Font('Fonts/Snowy Winter.otf', 50)
@@ -74,7 +74,7 @@ class MAIN:
             self.snake.speed += 1
             self.fruit.randomize()
             self.snake.add_block()
-            self.snake.play_crunch_sound()
+            # self.snake.play_crunch_sound()
         if self.fruit.pos in self.snake.body[1:] or \
                 (self.level2_pass and self.fruit.pos in
                  self.grass.borders_lvl2) or \
@@ -104,8 +104,8 @@ class MAIN:
         self.snake.speed = 6
         del self.snake
         self.screen.fill(pygame.Color('black'))
-        game_over_surface = self.game_over_font.render('ROUND 2', True,
-                                                       pygame.Color('red'))
+        # game_over_surface = self.game_over_font.render('ROUND 2', True,
+        #                                                pygame.Color('red'))
         game_over_rect = game_over_surface.get_rect()
         game_over_rect.midtop = (cell_number * cell_size / 2,
                                  cell_number * cell_size / 2)
@@ -125,7 +125,7 @@ class MAIN:
         game_over_rect = game_over_surface.get_rect()
         game_over_rect.midtop = (cell_number * cell_size / 2, cell_number * cell_size / 2)
         self.screen.blit(game_over_surface, game_over_rect)
-        pygame.mixer.Sound('Sound/round3.mp3').play()
+        # pygame.mixer.Sound('Sound/round3.mp3').play()
         pygame.display.flip()
         time.sleep(2)
         self.pause()
@@ -140,7 +140,7 @@ class MAIN:
         game_over_rect = game_over_surface.get_rect()
         game_over_rect.midtop = (cell_number * cell_size / 2, cell_number * cell_size / 2)
         self.screen.blit(game_over_surface, game_over_rect)
-        pygame.mixer.Sound('Sound/round4.mp3').play()
+        # pygame.mixer.Sound('Sound/round4.mp3').play()
         pygame.display.flip()
         time.sleep(2)
         self.pause()
@@ -155,8 +155,8 @@ class MAIN:
         game_over_rect = game_over_surface.get_rect()
         game_over_rect.midtop = (cell_number * cell_size / 2, cell_number * cell_size / 2)
         self.screen.blit(game_over_surface, game_over_rect)
-        pygame.mixer.Sound('Sound/final_round .mp3').play()
-        pygame.mixer.Sound('Sound/finish_him.mp3').play()
+        # pygame.mixer.Sound('Sound/final_round .mp3').play()
+        # pygame.mixer.Sound('Sound/finish_him.mp3').play()
         pygame.display.flip()
         time.sleep(2)
         self.pause()
@@ -211,9 +211,9 @@ class MAIN:
         game_over_rect.center = (cell_number * cell_size / 2,
                                  cell_number * cell_size / 2)
         self.screen.blit(game_over_surface, game_over_rect)
-        pygame.mixer.music.stop()
-        pygame.mixer.Sound('Sound/laugh.mp3').play()
-        pygame.mixer.Sound('Sound/you_suck.mp3').play()
+        # pygame.mixer.music.stop()
+        # pygame.mixer.Sound('Sound/laugh.mp3').play()
+        # pygame.mixer.Sound('Sound/you_suck.mp3').play()
         pygame.display.flip()
         pygame.mixer.music.play()
         self.game_score = 0
@@ -241,7 +241,7 @@ class MAIN:
             self.best_record = False
         self.draw_top_score()
         self.pause("PAUSED", 'Press C to restart')
-        pygame.mixer.Sound('Sound/round_one.mp3').play()
+        # pygame.mixer.Sound('Sound/round_one.mp3').play()
 
     def draw_top_score(self):
         wait = True
@@ -317,8 +317,8 @@ class MAIN:
                                  cell_number * cell_size / 2)
         self.screen.blit(game_over_surface, game_over_rect)
 
-        pygame.mixer.music.stop()
-        pygame.mixer.Sound('Sound/flawless_victory.mp3').play()
+        # pygame.mixer.music.stop()
+        # pygame.mixer.Sound('Sound/flawless_victory.mp3').play()
         pygame.display.flip()
         time.sleep(2)
         del self.snake
@@ -336,7 +336,7 @@ class MAIN:
             self.best_record = False
         self.draw_top_score()
         self.pause("PAUSED", 'Press C to restart')
-        pygame.mixer.Sound('Sound/round_one.mp3').play()
+        # pygame.mixer.Sound('Sound/round_one.mp3').play()
 
     def pause(self, text1="PAUSED", text2='Press C to continue'):
         paused = True
