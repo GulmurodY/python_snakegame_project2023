@@ -10,8 +10,8 @@ class SNAKE:
         self.new_block = False
         self.screen = screen
         self.speed = 6
-        self.get_over_here = pygame.mixer.Sound(
-            'Sound/scorpion-get-over-here.mp3')
+        # self.get_over_here = pygame.mixer.Sound(
+        #     'Sound/scorpion-get-over-here.mp3')
         self.head_up = pygame.image.load(
             'black_snake_graphics/head_up.png'
         ).convert_alpha()
@@ -222,5 +222,5 @@ class SNAKE:
     def add_block(self):
         self.new_block = True
 
-    def play_crunch_sound(self):
-        self.get_over_here.play()
+    # def play_crunch_sound(self):
+    #     self.get_over_here.play()
