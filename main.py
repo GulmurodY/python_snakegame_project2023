@@ -8,9 +8,9 @@ from globals import username, color, cell_size, cell_number
 screen = pygame.display.set_mode((cell_number * cell_size,
                                   cell_number * cell_size))
 clock = pygame.time.Clock()
-pygame.mixer.pre_init(44100, -16, 2, 512)
-pygame.mixer.music.load("Sound/theme_song.mp3")
-pygame.mixer.music.play(-1)
+# pygame.mixer.pre_init(44100, -16, 2, 512)
+# pygame.mixer.music.load("Sound/theme_song.mp3")
+# pygame.mixer.music.play(-1)
 main_game = MAIN(color, username, screen)
 
 prev_keytime = time.time() - 1
